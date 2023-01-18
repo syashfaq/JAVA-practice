@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object example</title>
+    <style>
+        .a1{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3  class="a1" style="color: red; text-decoration: underline;">OBJECT EXAMPLE</h3>
+    <p class="a1" style="color: blue; font-style: italic;">The Car Details is Below.....</p>
+    <p class="a1"id="demo"></p>
+    <script>
+        let cars ={
+            name: "Swift Dezire",
+            model:"S1254",
+            color:"Red",
+            EngineNo: "F12M3456789"
+        }
+        document.getElementById("demo").innerHTML = 
+        "The Name Of Car is : "+  cars.name + "</br>" +
+        "The Model Of Car is : "+  cars.model + "</br>" +
+        "The Colour Of Car is : "+  cars.color + "<br>" + 
+        "The Engine Number is: "+  cars.EngineNo;
+    </script>
+</body>
+</html>
