@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Metohod</title>
+</head>
+<body>
+    <h1>String Methods Example</h1>
+    <p id="demo"></p>
+    <script>
+        let text = "ABCDEF";
+        console.log("Lenght of string is ::",text.length);
+        const extra = text.slice(2,4);
+        console.log("Extra Length of string::" ,extra);
+        let fruits = "Apple, Banana, Mango";
+        let part = fruits.slice(7,13);
+        console.log("The part is ::",part);
+    
+    document.getElementById("demo").innerHTML=part;
+    let name = "Sayyed Ashfaq";
+    let firstName ="First Name is : "+ name.slice(0,6);
+    document.getElementById("demo").innerHTML=firstName;
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onmouse Practice</title>
+    <style>
+      #ash {
+        color: red;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 100px;
+        cursor: pointer;
+        transition: 2s;
+      }
+      #text {
+        margin-left: 600px;
+      }
+      .btn {
+        margin-left: 70px;
+        margin-top: 10px;
+        cursor: pointer;
+        size: 50px;
+      }
+      body {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="ash" onmouseover="modify()" onmouseleave="unmodify()">
+      Sayyed Ashfaq
+    </div>
+    <br />
+    <input type="text" name="name" id="text" />
+    <button onclick="ash()" class="btn">Submit</button>
+  </body>
+  <script>
+    function modify(){
+      document.getElementById("ash").style.fontSize = "100px";
+      document.getElementById("ash").style.color = "blue";
+      document.getElementById("ash").style.fontStyle = "arial";
+    }
+
+    function unmodify(){
+      document.getElementById("ash").style.fontSize = "50px";
+      document.getElementById("ash").style.color = "red";
+    }
+    function ash(){
+      let name = document.getElementById("text").value;
+      let string = "Assalamualaikum " + name + " Thank you for joinig...";
+      document.getElementsByClassName("btn")[0].innerHTML = string;
+    }
+  </script>
+</html>
