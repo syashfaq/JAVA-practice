@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Table</title>
+</head>
+<style>
+    table{
+       width: 50%;
+       border-collapse: collapse;
+    }
+    th{
+        color:blue;
+        font-size: 25px;
+    }
+    tr td{
+        text-align: center;
+        /* border-left: 2px solid black; */
+        /* border-right: 2px solid black; */
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding: 15px;
+    }
+    tr:hover {background-color: red;}
+    tr:nth-child(even) {background-color: aliceblue}
+</style>
+<body>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+        </tr>
+        <tr>
+            <td>Ashfakh</td>
+            <td>Inayat Nagar</td>
+            <td>9561241388</td>
+        </tr>
+        <tr>
+            <td>Sameer</td>
+            <td>Quadrabadplot</td>
+            <td>9730978606</td>
+        </tr>
+        <tr>
+            <td>Mohammad</td>
+            <td>Masoom Colony</td>
+            <td>7855856985</td>
+        </tr>
+    </table>
+</body>
+</html>
