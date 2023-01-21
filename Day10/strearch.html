@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Amaizing</h1>
+    <script>
+      let str = "Apple, Banana, Kiwi, Banana,An";
+      const indexs = str.search("Banana");
+      console.log(indexs);
+      let search = str.indexOf("Banana");
+      console.log(search);
+      const match = str.match(/an/gi);
+      console.log(match);
+      const lastIndexOf = str.lastIndexOf("Banana");
+      console.log(lastIndexOf);
+      const include = str.includes("Banana");
+      console.log(include);
+      console.log('--------------------------') ;     const start = str.startsWith("Apple");
+      console.log(start);
+      const end = str.endsWith("An");
+      console.log(end);
+    </script>
+  </body>
+</html>
