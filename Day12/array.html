@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Example</title>
+  </head>
+  <body>
+    <h1>Array Example</h1>
+    <p id="demo"></p>
+    <script>
+    // const cars = ["Renault","Maruti","Volvo"];
+    //  document.getElementById('demo').innerHTML = `car1: ${cars[0]}<br> car2: ${cars[1]} <br> car3: ${cars[2]}`;
+    const cars =[
+      {
+        id : 01,  
+        name : "Maruti",
+        model : 400,
+        colorAvailable : ["Red","Blue","Green"],
+        year : 2003,
+      },
+      {
+        id : 02,  
+        name : "volvo",
+        model : 500,
+        colorAvailable : ["Red","Blue","Green"],
+        year : 1999,
+      },
+      {
+        id : 03,  
+        name : "Renault",
+        model : 600,
+        colorAvailable : ["Red","Blue","Green"],
+        year : 2005,
+      },
+      {
+        id : 04,  
+        name : "Suzuki",
+        model : 100,
+        colorAvailable : ["Red","Blue","Green"],
+        year : 2022,
+      }
+    ];
+
+    document.getElementById('demo').innerHTML = 
+        `Car id : ${cars[0].id} <br> Car Name : ${cars[0].name} <br> Car Model Number: ${cars[0].model} <br> Availabel Color: ${cars[0].colorAvailable[2]} <br> Manufacturing Year : ${cars[0].year}<br><br>
+        Car id : ${cars[1].id} <br>Car Name : ${cars[1].name} <br> Car Model Number: ${cars[1].model} <br> Availabel Color: ${cars[1].colorAvailable[0]}<br> Manufacturing Year : ${cars[1].year}<br><br>
+        Car id : ${cars[2].id} <br>Car Name : ${cars[2].name} <br> Car Model Number: ${cars[2].model} <br> Availabel Color: ${cars[2].colorAvailable[1]}<br> Manufacturing Year : ${cars[2].year} <br><br>
+        Car id : ${cars[3].id} <br>Car Name : ${cars[3].name} <br> Car Model Number: ${cars[3].model} <br> Availabel Color: ${cars[3].colorAvailable[1]}<br> Manufacturing Year : ${cars[3].year}`
+    
+    </script>
+  </body>
+</html>
