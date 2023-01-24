@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+<body>
+    <h1>Array</h1>
+    <p id="demo"></p>
+
+    <script>
+        const fruits = ["Banana","Orange","Apple","Mango"];
+        // const fruits1 = ["Kiwi","Watermelon",]
+        // const allfruits = fruits. concat(fruits1);
+        // document.getElementById('demo').innerHTML = fruits.toString();
+        // document.getElementById('demo').innerHTML = fruits.join("+");
+        // fruits.pop();
+        // document.getElementById('demo').innerHTML = fruits;
+        // fruits.push("kiwi");
+        // fruits.pop();
+        // fruits.pop();
+        fruits.shift();
+        fruits.unshift("Banana");
+        console.log(fruits);
+        // fruits[10] = "kiwi";
+        console.log("fruits after 10 index",fruits);
+        document.getElementById('demo').innerHTML = allfruits.join(" / ");
+    </script>
+</body>
+</html>
