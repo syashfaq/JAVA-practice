@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array Declaration</h1>
+    <p id="demo"></p>
+    <script>
+        let family = [
+            "Farukh",
+            "Rafikh",
+            "Shafikh",
+            "Mushtakh",
+            "Ashfakh",
+            "Reshma",
+            "Khayyum",
+            "Nayyum",];
+        family.push("Magdum");
+        family[family.length] = "Ajmeri";
+        family[0] = "Reshma";
+        family[1] = "Rafique";
+        family[0] = "Farukh";
+        let length = family.length;
+        let firstArray = family[0];
+        let lastArray = family[family.length - 1];
+        
+        document.getElementById('demo').innerHTML = family.join(" ") ;
+    </script>
+</body>
+</html>
