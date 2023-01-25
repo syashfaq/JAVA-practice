@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sorting Method</title>
+</head>
+<body>
+    <h1>Array Sorting Method</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <input id="inputNumber" type="number" placeholder="Enter Number">
+    <button onclick="numberClicked()" >Add Number To The Array</button><br>
+    <input id="inputFruits" type="text" placeholder="Enter Fruits Name">
+    <button onclick="fruitsClicked()">Add Fruits</button>
+    
+    <script>
+        const numArray = [];
+        // const numberElement = document.getElementById('demo');
+        const inputNumber = document.getElementById('inputNumber');
+         const fruitsArray = [];
+            const fruitsElement = document.getElementById('demo1');
+            const inputFruits = document.getElementById('inputFruits');
+
+        function numberClicked(){
+            numArray.push(inputNumber.value);
+            numArray.sort();
+            document.getElementById('demo').innerHTML= numArray.join("|"); 
+        };
+          
+        
+        function fruitsClicked(){
+            console.log("Fruits:",inputFruits.value);
+            fruitsArray.push(inputFruits.value);
+            fruitsArray.sort();
+            // fruitsArray.reverse(function (a,b){return a-b});
+
+            fruitsElement.innerHTML = fruitsArray.join("|");
+    }
+        
+    </script>
+</body>
+
+</html>
