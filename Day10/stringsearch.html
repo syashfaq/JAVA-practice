@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Search Method Example</title>
+</head>
+<body>
+    <h1>Search String</h1>
+    <p id="demo"></p>
+    <!-- <script>
+        let str = "Apple, Banana, Kiwi, Banana";
+        const indexs =str.indexOf("Banana");
+        console.log("Index Of Banana is:: ", indexs);
+        const newstr = str.slice(indexs);
+        console.log("New String", newstr);
+    </script> -->
+    <script>
+        let str = "Apple, Banana, Kiwi, Banana";
+        const indexs =str.lastIndexOf("Banana");
+        console.log("Index Of Banana is:: ", indexs);
+        const newstr = str.slice(indexs);
+        console.log("New String", newstr);
+    </script>
+</body>
+</html>

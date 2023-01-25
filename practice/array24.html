@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array pop function and push function</h1>
+    <h1>Array splice function and slice function</h1>
+    <p id="demo1">hiii</p>
+    <p id="demo2"> hi</p>
+    <p id="demo3"></p>
+    <script>
+        const cars = ["BMW","Volvo","Renault"];
+        cars.pop();
+        cars.push("Indica","Tata Motors.");
+        document.write(cars);
+        cars.shift();
+        cars.unshift("Ashfaq")
+        
+       const car =  cars.splice(1,1);
+        document.getElementById('demo2').innerHTML =
+         "Total cars Available : "+"<br>" + cars.join("."+"<br>") + "<br>" 
+         + "The slice part is: " + "<br>"+car.join("<br>");
+    </script>
+</body>
+</html>
