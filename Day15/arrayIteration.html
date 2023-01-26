@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array</title>
+  </head>
+  <body>
+    <h1>Array Iteration Example</h1>
+    <p id="demo"></p>
+    <script>
+      const points = [24, 22, 1, 25, 65, 88, 9];
+      points.unshift(45,62,10); //Add array in begining
+      points.push(25); //Add array in last
+      points.sort(function (a, b) {
+        return b - a; //sort array by numeric sorting
+      });
+      points.forEach(function (value, index, array) {
+        console.log("Value", value, "index", index, "Entire Array", array);
+        document.getElementById("demo").innerHTML += " " + value; //forEach function use to display
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array Number Sorting</h1>
+    <p id="demo"></p>
+    <p id="demo1"> </p>
+    <p id="demo3"></p>
+    <script>
+        const numArray = [4,6,8,1,28,7,100,75];
+        const maxValue = Math.max.apply(null,numArray);
+        const minValue = Math.min.apply(null,numArray)
+        document.getElementById('demo1').innerHTML = 
+        "The Maximum Value in Array is :"+ maxValue;
+        document.getElementById('demo3').innerHTML = 
+        "The Minimum Value in Array is :"+ minValue;
+        numArray.sort(function(a,b){
+            console.log("value of a is::",a);
+            console.log("value of b is::",b);
+            console.log("value of a-b is::",b-a);
+            return b-a;
+        });
+        document.getElementById('demo').innerHTML = numArray.join("|");
+
+    </script>
+</body>
+</html>
