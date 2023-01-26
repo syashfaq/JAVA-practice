@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Array Sorting</title>
-</head>
-<body>
+    <style>
+      button {
+        color: black;
+        background-color: yellow;
+        cursor: pointer;
+      }
+      p {
+        font-size: 10px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Array Sorting Methods</h1>
     <p id="displayNumber"></p>
-    <!-- <p id="displayfruits"></p> -->
-    <input id="inputNumber" type="number" placeholder="Enter Number">
-    <button onclick="" >Add To Array</button>
+    <p id="displayfruits"></p>
+
+    <input id="inputNumber" type="number" placeholder="Enter Number" />
+    <button onclick="onclickedNumber()">Enter Array</button><br /><br />
+    <input id="inputFruitName" type="text" placeholder="Enter Fruit Name" />
+    <button onclick="onclickedFruit()">Enter Fruit Name</button>
     <script>
-        const numArray = [];
-        const displayArray = document.getElementById('displayNumber');
-        const inputArray = document.getElementById('inputNumber');
-        function onArray
+      const numArray = [];
+      const displayArray = document.getElementById("displayNumber");
+      const inputArray = document.getElementById("inputNumber");
+      function onclickedNumber() {
+        numArray.push(inputArray.value);
+        numArray.sort();
+        displayArray.innerHTML = numArray.join("|");
+      }
+
+      const fruitArray = [];
+      const displayArray1 = document.getElementById("displayfruits");
+      const inputArray1 = document.getElementById("inputFruitName");
+
+      function onclickedFruit() {
+        fruitArray.push(inputArray1.value);
+        fruitArray.sort();
+        displayArray1.innerHTML = fruitArray.join("|");
+      }
     </script>
-</body>
+  </body>
 </html>
