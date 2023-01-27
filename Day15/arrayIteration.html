@@ -11,6 +11,7 @@
     <p id="demo"></p>
     <script>
       const points = [24, 22, 1, 25, 65, 88, 9];
+      let txt = "";
       points.unshift(45,62,10); //Add array in begining
       points.push(25); //Add array in last
       points.sort(function (a, b) {
@@ -18,7 +19,8 @@
       });
       points.forEach(function (value, index, array) {
         console.log("Value", value, "index", index, "Entire Array", array);
-        document.getElementById("demo").innerHTML += " " + value; //forEach function use to display
+        txt += " | " + value;
+        document.getElementById("demo").innerHTML = txt; //forEach function use to display
       });
     </script>
   </body>
