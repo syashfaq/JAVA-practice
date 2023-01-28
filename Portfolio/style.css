@@ -79,9 +79,9 @@ ul li a:hover{
 .image{
     
     width: 30%;
-    height:60%;
+    height:50%;
     position: absolute;
-    right: 100px;
+    right: 80px;
     bottom:0;
    
 }
@@ -95,4 +95,15 @@ ul li a:hover{
 }
 .image:hover .syed{
     left: 55%;
+}
+.logo1{
+    
+    font-size: 180%;
+    padding: 10px 100px;
+    
+    
+}
+.logo1 a:hover{
+    color:red;
+    transition: -4s ease;
 }
