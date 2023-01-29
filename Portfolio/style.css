@@ -44,7 +44,7 @@ ul li a{
     transition: -4s ease;
 }
 ul li a:hover{
-    color: orangered;
+    color: blue;
 }
 .info{
     margin-left: 7%;
@@ -96,14 +96,17 @@ ul li a:hover{
 .image:hover .syed{
     left: 55%;
 }
-.logo1{
-    
-    font-size: 180%;
-    padding: 10px 100px;
-    
-    
+.icons a{
+    text-decoration: none;
+    color: black;    
 }
-.logo1 a:hover{
-    color:red;
-    transition: -4s ease;
+.icons ion-icon{
+    margin-left: 7%;
+    color: forestgreen;
+    margin-right: -80px;
+    font-size: 40px;
+    transition: -4 ease;
+}
+.icons ion-icon:hover{
+    color:blue
 }
