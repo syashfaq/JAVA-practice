@@ -34,17 +34,18 @@ ul li{
     list-style: none;
     display: inline-block;
     padding: 10px 16px;
+    margin: 15px;
 }
 ul li a{
     font-size: 16px;
     font-weight: bold;
     text-decoration: none;
-    color: green;
+    color:blue;
     margin-top: -3%;
     transition: -4s ease;
 }
 ul li a:hover{
-    color: blue;
+    color: red;
 }
 .info{
     margin-left: 7%;
@@ -102,11 +103,11 @@ ul li a:hover{
 }
 .icons ion-icon{
     margin-left: 7%;
-    color: forestgreen;
+    color: blue;
     margin-right: -80px;
     font-size: 40px;
     transition: -4 ease;
 }
 .icons ion-icon:hover{
-    color:blue
+    color:red;
 }
