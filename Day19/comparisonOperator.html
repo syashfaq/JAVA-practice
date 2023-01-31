@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>comparison Operator</title>
+  </head>
+  <body>
+    <h1>comparison Operator Example</h1>
+    <input id="ageId" type="text" placeholder="Enter Your Age" />
+    <button onclick="validate()">Vote!</button>
+
+    <p id="demo"></p>
+
+    <script>
+      const ageInputElement = document.getElementById("ageId");
+      const paragraphElement = document.getElementById("demo");
+      function validate() {
+        // if (Number(ageInputElement.value) > 18) {
+        //   paragraphElement.innerHTML = '"Great! You can eligible for vote!"';
+        // } else {
+        //   paragraphElement.innerHTML = '"You are too young to vote"';
+        // }
+        if(isNaN(age)){
+            paragraphElement.innerHTML = "Invalid Input Please Insert Correct Age";
+        }else{
+        paragraphElement.innerHTML =
+        Number(ageInputElement.value) > 18
+        ? '"Great! You can eligible for vote!"'
+        : '"You are too young to vote!"'}
+      }
+    </script>
+  </body>
+</html>
