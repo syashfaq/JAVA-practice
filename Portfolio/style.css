@@ -87,10 +87,10 @@ ul li a:hover{
 }
 .image img{
     position: absolute;
-    height: 140%;
+    height: 100%;
     left: 40%;
     transform: translate(-55%);
-    bottom: 0;
+    margin-bottom: 0px;
     transition: left 2s ease;
 }
 .image:hover .syed{

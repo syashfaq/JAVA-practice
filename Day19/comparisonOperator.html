@@ -22,13 +22,13 @@
         // } else {
         //   paragraphElement.innerHTML = '"You are too young to vote"';
         // }
-        if(isNaN(age)){
+        if(isNaN(Number(ageInputElement.value))){
             paragraphElement.innerHTML = "Invalid Input Please Insert Correct Age";
         }else{
         paragraphElement.innerHTML =
         Number(ageInputElement.value) > 18
         ? '"Great! You can eligible for vote!"'
-        : '"You are too young to vote!"'}
+        : '"You are too younger to vote!"'}
       }
     </script>
   </body>
