@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Practice</title>
+  </head>
+  <body>
+    <h1>Object Data Types Practice</h1>
+    <button onclick="fullname()">Full Name</button>
+    <p id="demo"></p>
+    <button onclick="Class()">Class</button>
+    <p id="class"></p>
+    <button onclick="Age()">Age</button>
+    <p id="age"></p>
+    <button onclick="Address()">Address</button>
+    <p id="address"></p>
+
+    <script>
+      let student = {
+        firstName: "Sayyed",
+        lastName: "Ashfaq",
+        class: "BCS",
+        age: 32,
+        address: {
+          city: "Parbhani",
+          state: "Maharashtra.",
+        },
+      };
+      let full = student.firstName + " " + student.lastName;
+
+      function fullname() {
+        let fullName = document.getElementById("demo");
+        fullName.innerHTML = full;
+      }
+      function Class() {
+        let fullName = document.getElementById("class");
+        fullName.innerHTML = student.class;
+      }
+      function Age() {
+        let fullName = document.getElementById("age");
+        fullName.innerHTML = student.age;
+      }
+      function Address() {
+        let fullAddress = student.address.city + ", " + student.address.state;
+        document.getElementById("address").innerHTML = fullAddress;
+      }
+    </script>
+  </body>
+</html>
