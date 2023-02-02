@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch  Statement</title>
+</head>
+<body>
+    <h1>Switch Statement</h1>
+    <p id="demo"></p>
+    <script>
+        let day = new Date().getDay();
+        console.log(day);
+        let weekday;
+        // switch (day){
+        //     case 0 :
+        //         weekday = "Sunday";
+        //     break;
+        //     case 1:
+        //         weekday = "Monday";
+        //     break;
+        //     case 2 :
+        //         weekday = "Tuesday";
+        //     break;
+        //     case 3:
+        //         weekday = "Wednesday";
+        //     break;
+        //     case 4:
+        //         weekday = "Thursday";
+        //     break;
+        //     case 5 :
+        //         weekday = "Friday";
+        //     break;
+        //     case 6 :
+        //         weekday = "Saturday";
+        //     break;}
+      switch (day) {
+        case 0:
+            weekday = "Sunday";
+            break;
+            case 6:
+            weekday = "Saturday";
+            break;
+        default:
+            weekday = "Looking forword for weekend!"
+            break;
+      }
+      document.getElementById("demo").innerHTML =  weekday;
+    </script>
