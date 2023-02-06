@@ -1,0 +1,31 @@
+<html>  
+<head> <title> JavaScript Palindrome </title>  
+</head>  
+<body>  
+    <input type="text" id="input">
+    <button onclick="checkPalindrome()">Check</button>
+    <p id="demo"></p>
+  
+<!-- Use JavaScript programming code to validate the Palindrome numbers or strings. -->  
+<script>        
+          
+function checkPalindrome() {
+    const str = document.getElementById('input'); 
+    
+  // find the length of the string
+  const len = str.length;
+  // loop through half of the string
+  for (let i = 0; i < len / 2; i++) {
+    // check each position
+    // between the first and the last character
+    if (str[i] !== str[len - 1 - i]) {
+      document.getElementById('demo').innerHTML = "NOT a palindrome";
+    }
+  }
+  document.getElementById('demo').innerHTML = "The string is a palindrome";
+}
+
+
+</script>  
+    </body>  
+        </html>   

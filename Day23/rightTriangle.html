@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Right Angle</title>
+</head>
+<body>
+    <h2>Right Angle Triangle Using Star</h2>
+    <input type="number" id="depth">
+    <button onclick="righttriangle()">Print</button>
+    <p id="demo"></p>
+    <script>
+        function righttriangle(){
+    
+    let n = Number(document.getElementById('depth').value); // you can take input from prompt or change the value
+    let string = "";
+    for (let i = 1; i <= n; i++) {
+      // printing spaces
+      for (let j = 0; j < n - i; j++) {
+        string += " ";
+      }
+      // printing star
+      for (let k = 0; k < i; k++) {
+        string += "*";
+      }
+      string += "<br>";
+    }
+    document.getElementById("demo").innerHTML = `<pre>${string}</pre>`;
+        }
+    </script>
+</body>
+</html>
