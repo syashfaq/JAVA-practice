@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hollow Square</title>
+</head>
+<body>
+<h2>Hollow Square</h2>
+<input type="number" id="depth">
+<button onclick="hollowPrint()">Print Hollow</button>
+<p id="demo"></p>
+<script>
+    function hollowPrint(){
+let n = Number(document.getElementById('depth').value); // row or column count
+    // defining an empty string
+    let string = "";
+
+    for (let i = 0; i < n; i++) { // external loop
+      for (let j = 0; j < n; j++) { // internal loop
+        if (i === 0 || i === n - 1) {
+          string += "*";
+        }
+        else {
+          if (j === 0 || j === n - 1) {
+            string += "*";
+          }
+          else {
+            string += " ";
+          }
+        }
+      }
+      // newline after each row
+      string += "<br>";
+    }
+    // printing the string
+    document.getElementById("demo").innerHTML = `<pre>${string}</pre>`;
+}
+</script>
+</body>
+</html>
