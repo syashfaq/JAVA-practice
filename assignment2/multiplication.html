@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin-left: 40%;
+            margin-right: 40%;
+            background-color: aquamarine;
+        }
+        .container{
+            text-align: center;
+            margin-top: 100px;
+            border: 2px solid red;
+            background-color: lightseagreen;
+            padding-bottom: 10px;
+            padding-left: 2px;
+            height: auto;
+            justify-content: center;
+            display: grid;
+           
+
+        }
+        #firstNumber{
+            margin: 10px;
+        }
+        #secondNumber{
+            margin: 10px;
+        }
+        button{
+            cursor: pointer;
+            margin: 10px;
+            background-color: brown;
+            border-color: blue;
+            font-size: 15px;
+            margin-left: 60px;
+        }
+        #demo{
+            margin-top: 2px;
+            font-size: 18px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Multiplication Two Number</h2>
+        First Number : <input type="number" id="firstNumber"><br>
+        Second Number : <input type="number" id="secondNumber"><br>
+        <button onclick="multiply()">Multiply</button>
+        <button onclick="divide()">Divide</button><br>
+        <p > The result is : <br> <span id="demo"></span></p>
+    </div>
+    <script>
+        function multiply()
+{
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+        document.getElementById("demo").innerHTML = num1 * num2;
+}
+
+function divide() 
+{ 
+        num1 = document.getElementById("firstNumber").value;
+        num2 = document.getElementById("secondNumber").value;
+document.getElementById("demo").innerHTML = num1 / num2;
+}
+
+    </script>
+</body>
+</html>
