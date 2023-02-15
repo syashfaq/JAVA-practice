@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stopwatch</title>
+    <style>
+        button{
+            cursor: pointer;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stopwatch</h1>
+    <button onclick="onStartClicked()">Start</button>
+    <button onclick="onStopClicked()">Pause</button>
+    <button onclick="onResetClicked()">Reset</button>
+    <p id="demo"></p>
+    <script>
+        let timeId;
+        let count = 0;
+        const paraElement = document.getElementById('demo');
+
+        function onStartClicked() {
+           
+          
+           timeId = setInterval(() => {
+            paraElement.innerHTML = count++;
+           }, 1000); 
+        }
+           function onStopClicked() {
+            clearInterval(timeId);
+           }
+        function onResetClicked(){
+            paraElement.innerHTML = "";
+            count = 0;
+            clearInterval(timeId);
+
+        }
+    </script>
+</body>
+</html>
