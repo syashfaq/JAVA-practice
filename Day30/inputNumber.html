@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input Number</title>
+    <style>
+        #container{
+            text-align: center;
+            border: 1px solid rebeccapurple;
+            justify-content: center;
+            background-color: rgb(22, 222, 18);
+            color: black;
+            width: fit-content;
+            margin-left: 500px;
+            margin-top: 100px;
+            size: 50px;
+            height: max-content;
+            font-size: 30px;
+            
+        }
+        button{
+            background-color: rgb(242, 14, 25);
+            font-size: 30px;
+            margin-top: 16px;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+            border-bottom: black;
+        }
+        input{
+            font-size: 30px;
+        }
+
+</style>
+</head>
+<body>
+    <div id="container">
+        <h1>Input 1 to 10 Number</h1> 
+        <input type="number" id="num"> <br>
+        <button onclick="myFunction()">Submit</button>
+        <p id="demo"></p>
+    </div>
+    <script>
+        function myFunction(){
+        let x = document.getElementById('num').value;
+        let text;
+        if (isNaN(x) || x < 1 || x > 10) {
+            text = "Invalid Number";
+        } else {
+            text = "Valid Number";
+        }
+        document.getElementById('demo').innerHTML = text; 
+    }
+           
+        
+    </script>
+</body>
+</html>
