@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>stopwatch</title>
     <style>
+
+        #container{
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 30px;
+            display:flexbox;
+        }
+        
+        #demo{
+            font-size: 40px;
+        }
         button{
             cursor: pointer;
             background-color: blue;
@@ -14,11 +25,13 @@
     </style>
 </head>
 <body>
+    <div id="container">
     <h1>Stopwatch</h1>
     <button onclick="onStartClicked()">Start</button>
     <button onclick="onStopClicked()">Pause</button>
     <button onclick="onResetClicked()">Reset</button>
     <p id="demo"></p>
+</div>
     <script>
         let timeId;
         let count = 0;
